@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Profesional Dokter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .medical-gradient { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); color: white; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- WhatsApp Floating Button -->
+    <!-- GANTI NOMOR HP DI SINI (Gunakan format internasional tanpa +) -->
+    <a href="https://wa.me/628123456789?text=Halo%20Dokter,%20saya%20ingin%20konsultasi%20dan%20buat%20janji." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="font-bold text-xl text-blue-600 tracking-tight">dr. [Nama Lengkap], [Gelar]</div>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#home" class="hover:text-blue-600">Beranda</a>
+                <a href="#profil" class="hover:text-blue-600">Profil</a>
+                <a href="#jadwal" class="hover:text-blue-600">Jadwal</a>
+                <a href="#kontak" class="hover:text-blue-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 medical-gradient">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold tracking-wide">DOKTER SPESIALIS</span>
+                <h1 class="text-4xl md:text-6xl font-bold mt-4 leading-tight">Melayani dengan Hati, <br><span class="text-blue-600">Peduli Kesehatan Anda.</span></h1>
+                <p class="text-lg text-gray-600 mt-6 max-w-lg">Berkomitmen memberikan solusi medis terbaik dan edukasi berkelanjutan demi kualitas hidup pasien yang lebih baik.</p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#jadwal" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Lihat Jadwal</a>
+                    <a href="#kontak" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition">Hubungi Sekarang</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-blue-200/50 rounded-full blur-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=500" alt="Foto Profil Dokter" class="relative rounded-2xl shadow-2xl w-80 h-96 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Profil & Latar Belakang</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-user-md text-blue-600 mr-3"></i> Tentang Saya</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Saya adalah seorang dokter [Nama Spesialisasi] dengan pengalaman lebih dari [X] tahun. Fokus utama saya adalah [Sebutkan fokus, misal: kesehatan anak/bedah saraf/rehabilitasi jantung]. Saya percaya bahwa komunikasi yang baik antara dokter dan pasien adalah kunci kesembuhan.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-graduation-cap text-blue-600 mr-3"></i> Pendidikan</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 text-sm"></i> Spesialis [Nama Spesialis] - Universitas [Nama]</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 text-sm"></i> Kedokteran Umum - Universitas [Nama]</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2 text-sm"></i> Anggota Ikatan Dokter Indonesia (IDI)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jadwal Praktik Section -->
+    <section id="jadwal" class="py-24 bg-gray-50 text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12">Jadwal Praktik</h2>
+            
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                <table class="w-full text-left">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="px-6 py-4">Hari</th>
+                            <th class="px-6 py-4">Lokasi / Rumah Sakit</th>
+                            <th class="px-6 py-4">Jam Praktik</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-blue-50 transition">
+                            <td class="px-6 py-4 font-semibold">Senin - Rabu</td>
+                            <td class="px-6 py-4 text-gray-600">RS Medika Utama (Poli A)</td>
+                            <td class="px-6 py-4 text-blue-700 font-medium">16:00 - 20:00</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50 transition">
+                            <td class="px-6 py-4 font-semibold">Kamis - Jumat</td>
+                            <td class="px-6 py-4 text-gray-600">Klinik Sehat Sejahtera</td>
+                            <td class="px-6 py-4 text-blue-700 font-medium">09:00 - 12:00</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50 transition">
+                            <td class="px-6 py-4 font-semibold">Sabtu</td>
+                            <td class="px-6 py-4 text-gray-600">Homecare / Konsultasi Online</td>
+                            <td class="px-6 py-4 text-blue-700 font-medium">Dengan Perjanjian</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-6 text-sm text-gray-500 italic">* Jadwal dapat berubah sewaktu-waktu. Mohon konfirmasi via WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Butuh Konsultasi?</h2>
+            <p class="text-gray-600 mb-10">Klik tombol di bawah ini untuk terhubung langsung ke layanan administrasi atau pesan janji temu via WhatsApp.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4 class="font-bold mb-2">Lokasi Utama</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Jl. Kesehatan No. 123, Jakarta Selatan (Lantai 2, Ruang 204)</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-green-500 text-3xl mb-4"><i class="fab fa-whatsapp"></i></div>
+                    <h4 class="font-bold mb-2">WhatsApp Admin</h4>
+                    <a href="https://wa.me/628123456789" class="text-blue-600 font-bold hover:underline">+62 812 3456 789</a>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <a href="https://wa.me/628123456789?text=Halo%20Dokter,%20saya%20ingin%20buat%20janji%20temu." class="bg-green-500 text-white px-10 py-4 rounded-full font-bold text-lg inline-flex items-center hover:bg-green-600 transition shadow-xl">
+                    <i class="fab fa-whatsapp mr-3 text-2xl"></i> Buat Janji Temu Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-200 text-center text-gray-500 text-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>&copy; 2023 dr. [Nama Lengkap]. Hak Cipta Dilindungi.</p>
+            <p class="mt-2 text-xs">Medical Portfolio - Dibuat untuk tujuan profesional.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
